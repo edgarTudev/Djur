@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zebra — Fakta</title>
+  <style>
+    /* Inline CSS (placerad i head enligt önskemål) */
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.5;
+      margin: 0;
+      padding: 0;
+      background: #f7f7f9;
+      color: #222;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+    .card {
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      max-width: 820px;
+      width: 100%;
+      overflow: hidden;
+    }
+    .header {
+      padding: 1.25rem 1.5rem;
+      border-bottom: 1px solid #eef0f3;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 1.6rem;
+    }
+    .content {
+      display: grid;
+      grid-template-columns: 1fr 320px;
+      gap: 1rem;
+      padding: 1.25rem 1.5rem;
+      align-items: start;
+    }
+    .text {
+      font-size: 1rem;
+    }
+    .image-wrapper {
+      text-align: center;
+    }
+    .image-wrapper img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      display: block;
+      margin: 0 auto;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    }
+    .caption {
+      font-size: 0.85rem;
+      color: #666;
+      margin-top: 0.5rem;
+    }
+    .footer {
+      padding: 1rem 1.5rem;
+      background: #fbfcfd;
+      border-top: 1px solid #eef0f3;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    /* Responsiv */
+    @media (max-width: 760px) {
+      .content { grid-template-columns: 1fr; }
+      .image-wrapper { order: -1; } /* visa bilden överst på små skärmar */
+    }
+  </style>
+</head>
+<body>
+  <article class="card" role="article" aria-labelledby="title">
+    <header class="header">
+      <h1 id="title">Zebra — Kort fakta</h1>
+    </header>
+
+    <section class="content">
+      <div class="text">
+        <p>
+          Zebror är afrikanska hästdjur (släktet <em>Equus</em>) kända för sina svart-vita ränder.
+          Det finns tre huvudarter: savannzebra (plains/Grant’s), Grévyzebra och bergszebra. Zebror lever ofta i flockar
+          på savann och gräsmarker där de betar gräs. Ränderna är unika för varje individ och kan hjälpa till med
+          kamouflage i grupp, igenkänning mellan djur och möjligen avskräcka insekter.
+        </p>
+
+        <p>
+          Zebror kan springa snabbt (över 60 km/h i kortare sträckor), har god hörsel och ett kraftigt spark som
+          försvar mot rovdjur. Ungar kallas föl och stannar nära modern i början av livet.
+        </p>
+      </div>
+
+  
+
+   
+  </article>
+</body>
+</html>
